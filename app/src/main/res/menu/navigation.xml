@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_products"
+        android:icon="@drawable/products"
+        android:title="Productos"/>
+
+    <item
+        android:id="@+id/navigation_clients"
+        android:icon="@drawable/client"
+        android:title="Clientes"/>
+
+    <item
+        android:id="@+id/navigation_sales"
+        android:icon="@drawable/sales"
+        android:title="Ventas"/>
+
+</menu>
