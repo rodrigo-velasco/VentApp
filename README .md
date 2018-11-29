@@ -1,14 +1,14 @@
-#1. Instalación
+## 1. Instalación
 - Descargar todo el proyecto de este repositorio. 
 - Abrir en Android Studio 
 - Ejecutar en teléfono celular usando un cable USB. Esto causara la descarga e instalación directamente en el celular. 
     * NOTA: Se debe habilitar la instalación de apps de origen desconocido. Esto se hace en Ajustes -> Seguridad -> Origenes desconocidos.  
 
-#2. Diagrama Conceptual
+## 2. Diagrama Conceptual
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/1_dConceptual.jpg "Diagrama conceptual")
 
-#3. Historias de usuario
+## 3. Historias de usuario
 
  ID | Quien | Que | Para que
 ----|-------|-----| --------
@@ -28,15 +28,15 @@
 14  | Vendedor | Puede visualizar el total de abonos recogidos por días, semana y mes. | Para confirmar el total que falta por cobrar de lo vendido.
 
 
-#4. Casos de uso
+## 4. Casos de uso
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/3_cu_controlVentas.jpg "Casos de uso")
 
-#5. Diagrama entidad - relación
+## 5. Diagrama entidad - relación
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/2_dDB.jpg "Entidad-Relación")
 
-#6. Diccionario de datos
+## 6. Diccionario de datos
 
 # Clientes
 - Función: Almacenar los clientes y sus datos.
@@ -84,4 +84,4 @@ ID_Abono	|    Integral	| Identificador de los abonos adjuntos a esta compra.
 Pagado	    |    Booleano	| Pagado: Si/No.
 
 
-#7. Interfaces de usuario
+## 7. Interfaces de usuario
