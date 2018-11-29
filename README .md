@@ -12,20 +12,20 @@
 
  ID | Quien | Que | Para que
 ----|-------|-----| --------
-- 1 | Vendedor | Se registra en el sistema usando sus datos de Nombre, Dirección, Teléfono y correo electrónico.  | Para hacer uso de la aplicación y realizar compras.
-- 2 | Vendedor | Puede agregar productos que quiera a una lista. | Para visualizar cuáles y cuántos productos ha pedido.
-- 3 | Vendedor | Puede registrar si el pago será de contado o en abonos. | Para que se ajuste a las necesidades del usuario.
-- 4 | Vendedor | Puede registrar si el pago se hará por semana, quincena o mes.  | Para que se ajuste a las necesidades del usuario.
-- 5 | Vendedor | Puede registrar el día de la semana y el horario en que se recogerá el abono. | Para que se ajuste a las necesidades del usuario.
-- 6 | Vendedor | Puede cancelar la compra de un producto antes de empezar a pagar por él. | Para no tener que empezar a pagar por un producto que se eligió por accidente.
-- 7 | Vendedor | Puede localizar a las personas por su nombre.  | Para visualizar la información personal registrada de la persona.
-- 8 | Vendedor | Puede visualizar el listado de productos adquiridos. | Para ver el listado de abonos realizados de cada producto.
-- 9 | Vendedor | Puede confirmar el estatus de los productos ya pagados y que faltan por pagar.  | Para visualizar la suma total de lo abonado y lo que adeuda.
-- 10 | Vendedor |Puede registrar nuevos productos en la aplicación, introduciendo descripción, precio y una fotografía.  | Para que usuarios interesados puedan realizar la compra del producto. 
-- 11 | Vendedor | Puede dar de baja productos ya registrados. | Para deshacerse de productos no tan vendidos o cambiarlos por nuevas versiones.
-- 12 | Vendedor | Puede editar los datos de un producto. | Para poder actualizar descripciones o fotografías cuando corresponda y hacer ofertas a clientes.
-- 13 | Vendedor | Puede visualizar un reporte de las personas, su domicilio y la cantidad del abono a recoger por dia, por semana y por mes.  | Para conocer quién y cuánto se dará de abono cada día. 
-- 14 | Vendedor | Puede visualizar el total de abonos recogidos por días, semana y mes. | Para confirmar el total que falta por cobrar de lo vendido.
+1   | Vendedor | Se registra en el sistema usando sus datos de Nombre, Dirección, Teléfono y correo electrónico.  | Para hacer uso de la aplicación y realizar compras.
+2   | Vendedor | Puede agregar productos que quiera a una lista. | Para visualizar cuáles y cuántos productos ha pedido.
+3   | Vendedor | Puede registrar si el pago será de contado o en abonos. | Para que se ajuste a las necesidades del usuario.
+4   | Vendedor | Puede registrar si el pago se hará por semana, quincena o mes.  | Para que se ajuste a las necesidades del usuario.
+5   | Vendedor | Puede registrar el día de la semana y el horario en que se recogerá el abono. | Para que se ajuste a las necesidades del usuario.
+6   | Vendedor | Puede cancelar la compra de un producto antes de empezar a pagar por él. | Para no tener que empezar a pagar por un producto que se eligió por accidente.
+7   | Vendedor | Puede localizar a las personas por su nombre.  | Para visualizar la información personal registrada de la persona.
+8   | Vendedor | Puede visualizar el listado de productos adquiridos. | Para ver el listado de abonos realizados de cada producto.
+9   | Vendedor | Puede confirmar el estatus de los productos ya pagados y que faltan por pagar.  | Para visualizar la suma total de lo abonado y lo que adeuda.
+10  | Vendedor |Puede registrar nuevos productos en la aplicación, introduciendo descripción, precio y una fotografía.  | Para que usuarios interesados puedan realizar la compra del producto. 
+11  | Vendedor | Puede dar de baja productos ya registrados. | Para deshacerse de productos no tan vendidos o cambiarlos por nuevas versiones.
+12  | Vendedor | Puede editar los datos de un producto. | Para poder actualizar descripciones o fotografías cuando corresponda y hacer ofertas a clientes.
+13  | Vendedor | Puede visualizar un reporte de las personas, su domicilio y la cantidad del abono a recoger por dia, por semana y por mes.  | Para conocer quién y cuánto se dará de abono cada día. 
+14  | Vendedor | Puede visualizar el total de abonos recogidos por días, semana y mes. | Para confirmar el total que falta por cobrar de lo vendido.
 
 
 #4. Casos de uso
