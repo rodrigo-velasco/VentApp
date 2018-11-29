@@ -103,7 +103,7 @@ Pagado	    |    Booleano	| Pagado: Si/No.
 
 - Nueva venta
 
-![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/(8_nuevaVenta.png "Nueva venta")
+![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/8_nuevaVenta.png "Nueva venta")
 
 - Ventas
 
@@ -114,5 +114,4 @@ Pagado	    |    Booleano	| Pagado: Si/No.
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/6_clientes.png "Clientes")
 
 - Productos
-
-![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/7_productos.png" "Productos")
+![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/7_productos.png "Producto")
