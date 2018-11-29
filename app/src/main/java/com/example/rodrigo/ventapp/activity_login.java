@@ -44,7 +44,7 @@ public class activity_login extends AppCompatActivity
 
         loginBtn.setEnabled(false);
 
-        String url = "http://rodrigo-vr12.000webhostapp.com/Layout_Login.php?" +
+        String url = "http://rodrigo-vr12.000webhostapp.com/login.php?" +
                 "mail=" + user.getText() + "&" +
                 "pass=" + pass.getText();
 
@@ -70,8 +70,7 @@ public class activity_login extends AppCompatActivity
 
         TextView password = findViewById(R.id.register_seller_txt_password);
         TextView password2 = findViewById(R.id.register_seller_txt_password2);
-        Button loginBtn = findViewById(R.id.login_btn_login);
-        loginBtn.setEnabled(false);
+        Button register = findViewById(R.id.register_seller_btn_register);
 
         if(password.getText().toString().equals(password2.getText().toString()))
         {
@@ -87,12 +86,14 @@ public class activity_login extends AppCompatActivity
                     "contrasena=" + password.getText().toString() + "&" +
                     "direccion=" + address.getText().toString();
 
+            register.setEnabled(false);
             new RegisterSeller().execute(url);
         }
 
         else
         {
             Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+            register.setEnabled(true);
         }
     }
 
@@ -203,6 +204,8 @@ public class activity_login extends AppCompatActivity
 
         protected void onPostExecute(String response)
         {
+            Button register = findViewById(R.id.register_seller_btn_register);
+            register.setEnabled(true);
             setContentView(R.layout.layout_login);
             Toast.makeText(activity_login.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
         }

@@ -107,8 +107,8 @@
 
     <ImageView
         android:id="@+id/register_client_img_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -121,7 +121,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.806"
-        tools:srcCompat="@tools:sample/avatars[0]" />
+        app:srcCompat="@drawable/placeholder"
+        tools:srcCompat="@drawable/placeholder" />
 
     <ImageView
         android:id="@+id/register_client_btn_takephoto"
@@ -139,7 +140,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.768"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/cameraicon" />
 
     <Button
         android:id="@+id/register_client_btn_back"

@@ -9,6 +9,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,40 +40,123 @@ public class activity_menu extends AppCompatActivity
         transaction.commit();
 
         //Cambia la pantalla según el click en la barra inferior
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment selectedFragment = null;
+        bottomNavigationView.setOnNavigationItemSelectedListener
+        (
+            new BottomNavigationView.OnNavigationItemSelectedListener()
+            {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item)
+                {
+                    Fragment selectedFragment = null;
 
-                switch (item.getItemId()) {
-                    case R.id.navigation_products:
-                        selectedFragment = fragment_products.newInstance();
-                        break;
-                    case R.id.navigation_clients:
-                        selectedFragment = fragment_clients.newInstance();
-                        break;
-                    case R.id.navigation_sales:
-                        selectedFragment = fragment_sales.newInstance();
-                        break;
+                    switch (item.getItemId())
+                    {
+                        case R.id.navigation_products:
+                            selectedFragment = fragment_products.newInstance(); break;
+                        case R.id.navigation_clients:
+                            selectedFragment = fragment_clients.newInstance(); break;
+                        case R.id.navigation_sales:
+                            selectedFragment = fragment_sales.newInstance(); break;
+                    }
+
+                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    transaction.replace(R.id.relative_layout, selectedFragment);
+                    transaction.commit();
+
+                    return true;
                 }
-
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.relative_layout, selectedFragment);
-                transaction.commit();
-
-                return true;
             }
-        });
+        );
     }
 
 
-    //Botón Clientes/Registrar cliente
-    public void registerClientOnClick(View view) {
+    //Botón Menu principal/Registrar producto
+    public void registerProductOnClick(View view)
+    {
+        setContentView(R.layout.layout_addproduct);
+    }
+
+    //Botón Menu principal/Registrar cliente
+    public void registerClientOnClick(View view)
+    {
         setContentView(R.layout.layout_addclient);
     }
 
+    //Botón Menu principal/Registrar venta
+    public void registerSaleOnClick(View view)
+    {
+        setContentView(R.layout.layout_addsale);
+    }
+
+    //Botón Registrar producto/Atrás
+    public void registerProductBackOnClick(View view)
+    {
+        //Pone la pantalla de productos primero
+        setContentView(R.layout.layout_main);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
+        Fragment selectedFragment = fragment_products.newInstance();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.relative_layout, selectedFragment);
+        transaction.commit();
+
+        //Cambia la pantalla según el click en la barra inferior
+        bottomNavigationView.setOnNavigationItemSelectedListener
+                (
+                        new BottomNavigationView.OnNavigationItemSelectedListener()
+                        {
+                            @Override
+                            public boolean onNavigationItemSelected(@NonNull MenuItem item)
+                            {
+                                Fragment selectedFragment = null;
+
+                                switch (item.getItemId())
+                                {
+                                    case R.id.navigation_products:
+                                        selectedFragment = fragment_products.newInstance(); break;
+                                    case R.id.navigation_clients:
+                                        selectedFragment = fragment_clients.newInstance(); break;
+                                    case R.id.navigation_sales:
+                                        selectedFragment = fragment_sales.newInstance(); break;
+                                }
+
+                                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                                transaction.replace(R.id.relative_layout, selectedFragment);
+                                transaction.commit();
+
+                                return true;
+                            }
+                        }
+                );
+    }
+
+    //Botón Registrar producto/Registrar
+    public void ProductUploadOnClick(View view) throws Exception
+    {
+        TextView name = findViewById(R.id.register_product_txt_name);
+        TextView buyingPrice = findViewById(R.id.register_product_txt_buyingprice);
+        TextView sellingPrice = findViewById(R.id.register_product_txt_sellingprice);
+        TextView qty = findViewById(R.id.register_product_txt_quantity);
+        TextView desc = findViewById(R.id.register_product_txt_description);
+
+        String tmp = "http://rodrigo-vr12.000webhostapp.com/insertProducto.php?" +
+                "nombre=" + name.getText().toString() + "&" +
+                "precioventa=" + sellingPrice.getText().toString() + "&" +
+                "cantidad=" + qty.getText().toString() + "&" +
+                "preciocosto=" + buyingPrice.getText().toString() + "&" +
+                "descripcion=" + desc.getText().toString();
+
+        new WebPOST().execute(tmp);
+    }
+
+    //Botón Registrar producto/Tomar foto
+    public void ProductTakePhotoOnClick(View view)
+    {
+
+    }
+
     //Botón Registrar cliente/Atrás
-    public void registerClientBackOnClick(View view) {
+    public void registerClientBackOnClick(View view)
+    {
         setContentView(R.layout.layout_main);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
@@ -123,74 +210,7 @@ public class activity_menu extends AppCompatActivity
         new WebPOST().execute(tmp);
     }
 
-    public void registerProductOnClick(View view) {
-        setContentView(R.layout.layout_addproduct);
-    }
-
-    public void registerProductBackOnClick(View view) {
-        setContentView(R.layout.layout_main);
-
-        BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
-        Fragment selectedFragment = fragment_products.newInstance();
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.relative_layout, selectedFragment);
-        transaction.commit();
-
-        bottomNavigationView.setSelectedItemId(R.id.navigation_products);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment selectedFragment = null;
-
-                switch (item.getItemId()) {
-                    case R.id.navigation_products:
-                        selectedFragment = fragment_products.newInstance();
-                        break;
-                    case R.id.navigation_clients:
-                        selectedFragment = fragment_clients.newInstance();
-                        break;
-                    case R.id.navigation_sales:
-                        selectedFragment = fragment_sales.newInstance();
-                        break;
-                }
-
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.relative_layout, selectedFragment);
-                transaction.commit();
-
-                return true;
-            }
-        });
-    }
-
-    public void ProductUploadOnClick(View view) throws Exception {
-        TextView name = findViewById(R.id.register_product_txt_name);
-        TextView buyingPrice = findViewById(R.id.register_product_txt_buyingprice);
-        TextView sellingPrice = findViewById(R.id.register_product_txt_sellingprice);
-        TextView qty = findViewById(R.id.register_product_txt_quantity);
-        TextView desc = findViewById(R.id.register_product_txt_description);
-
-        String tmp = "http://rodrigo-vr12.000webhostapp.com/insertProducto.php?" +
-        "nombre=" + name.getText().toString() + "&" +
-        "precioventa=" + sellingPrice.getText().toString() + "&" +
-        "cantidad=" + qty.getText().toString() + "&" +
-        "preciocosto=" + buyingPrice.getText().toString() + "&" +
-        "descripcion=" + desc.getText().toString();
-
-        new WebPOST().execute(tmp);
-    }
-
-    public void ProductTakePhotoOnClick(View view)
-    {
-
-    }
-
-    public void registerSaleOnClick(View view)
-    {
-        setContentView(R.layout.layout_addsale);
-    }
-
+    //Botón Registrar venta/Atrás
     public void registerSaleBackOnClick(View view)
     {
         setContentView(R.layout.layout_main);
@@ -231,6 +251,7 @@ public class activity_menu extends AppCompatActivity
         });
     }
 
+    //Botón Registar venta/Registrar
     public void SaleUploadOnClick(View view)
     {
         TextView client = findViewById(R.id.register_sale_txt_client);
@@ -348,5 +369,4 @@ public class activity_menu extends AppCompatActivity
             Toast.makeText(activity_menu.this, "Simón", Toast.LENGTH_SHORT).show();
         }
     }
-
 }
