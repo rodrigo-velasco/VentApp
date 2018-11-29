@@ -16,18 +16,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_clients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_products.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_products.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_addsale.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_addsale.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_addseller.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_addseller.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +46,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fragment_products.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_menu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="275" column="80" selection-start-line="275" selection-start-column="80" selection-end-line="275" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#ProductUploadOnClick#0;class#activity_menu#0" />
+                <element signature="method#ProductTakePhotoOnClick#0;class#activity_menu#0" />
+                <element signature="method#SaleUploadOnClick#0;class#activity_menu#0" />
+                <element signature="class#WebGET#0;class#activity_menu#0" />
+                <element signature="class#WebPOST#0;class#activity_menu#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_products.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_products.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="210" />
+            <state relative-caret-position="211">
+              <caret line="196" column="31" selection-start-line="196" selection-start-column="31" selection-end-line="196" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onCreateView#0;class#fragment_products#0" />
@@ -67,10 +80,9 @@
       <file leaf-file-name="fragment_clients.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_clients.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-867">
-              <caret line="87" column="79" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="79" />
+            <state relative-caret-position="238">
+              <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
               <folding>
-                <element signature="method#onCreateView#0;class#fragment_clients#0" />
                 <element signature="e#1693#1694#0" expanded="true" />
                 <element signature="e#1732#1733#0" expanded="true" />
                 <element signature="e#1805#1806#0" expanded="true" />
@@ -84,13 +96,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_sales.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fragment_sales.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_sales.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="191" column="52" selection-start-line="191" selection-start-column="52" selection-end-line="191" selection-end-column="52" />
+            <state relative-caret-position="358">
+              <caret line="198" column="92" selection-start-line="198" selection-start-column="92" selection-end-line="198" selection-end-column="92" />
               <folding>
-                <element signature="method#onCreateView#0;class#fragment_sales#0" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
                 <element signature="e#1686#1687#0" expanded="true" />
                 <element signature="e#1725#1726#0" expanded="true" />
                 <element signature="e#1798#1799#0" expanded="true" />
@@ -100,6 +113,18 @@
                 <element signature="e#3727#3728#0" expanded="true" />
                 <element signature="e#3764#3765#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout_list.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_list.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -2463,7 +2488,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="TA907059K2" />
+    <property name="device.picker.selection" value="5210cb7ee2566437" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
@@ -2611,7 +2636,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26626325" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32954547" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32954547" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
@@ -2672,8 +2697,14 @@
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_clients.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -2868,16 +2899,6 @@
         <state relative-caret-position="-2271" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/27.0.2/4ae031a24f432a35efae0d609731c5a34e65696c/appcompat-v7-27.0.2-sources.jar!/android/support/v7/app/AppCompatViewInflater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -2966,35 +2987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="399" selection-start-line="399" selection-end-line="434" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2214#3470#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3497#3498#0" expanded="true" />
-            <element signature="e#3555#3556#0" expanded="true" />
-            <element signature="e#3656#3657#0" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <element signature="e#3810#3811#0" expanded="true" />
-            <element signature="e#3865#3866#0" expanded="true" />
-            <element signature="e#4156#5324#0" expanded="true" />
-            <element signature="e#5323#5324#0" expanded="true" />
-            <element signature="method#ProductUploadOnClick#0;class#activity_menu#0" />
-            <element signature="method#ProductTakePhotoOnClick#0;class#activity_menu#0" />
-            <element signature="e#7818#8798#0" expanded="true" />
-            <element signature="e#8797#8798#0" expanded="true" />
-            <element signature="e#10563#11580#0" expanded="true" />
-            <element signature="e#11579#11580#0" expanded="true" />
-            <element signature="method#SaleUploadOnClick#0;class#activity_menu#0" />
-            <element signature="class#WebGET#0;class#activity_menu#0" />
-            <element signature="class#WebPOST#0;class#activity_menu#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Instrumentation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -3079,24 +3071,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_products.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/activity_menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="210" />
+        <state relative-caret-position="167">
+          <caret line="275" column="80" selection-start-line="275" selection-start-column="80" selection-end-line="275" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onCreateView#0;class#fragment_products#0" />
-            <element signature="class#WebGET#0;class#fragment_products#0" />
+            <element signature="method#ProductUploadOnClick#0;class#activity_menu#0" />
+            <element signature="method#ProductTakePhotoOnClick#0;class#activity_menu#0" />
+            <element signature="method#SaleUploadOnClick#0;class#activity_menu#0" />
+            <element signature="class#WebGET#0;class#activity_menu#0" />
+            <element signature="class#WebPOST#0;class#activity_menu#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_list.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_clients.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="87" column="79" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="79" />
+        <state relative-caret-position="238">
+          <caret line="198" column="96" selection-start-line="198" selection-start-column="96" selection-end-line="198" selection-end-column="96" />
           <folding>
-            <element signature="method#onCreateView#0;class#fragment_clients#0" />
             <element signature="e#1693#1694#0" expanded="true" />
             <element signature="e#1732#1733#0" expanded="true" />
             <element signature="e#1805#1806#0" expanded="true" />
@@ -3111,10 +3115,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_sales.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="191" column="52" selection-start-line="191" selection-start-column="52" selection-end-line="191" selection-end-column="52" />
+        <state relative-caret-position="358">
+          <caret line="198" column="92" selection-start-line="198" selection-start-column="92" selection-end-line="198" selection-end-column="92" />
           <folding>
-            <element signature="method#onCreateView#0;class#fragment_sales#0" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
             <element signature="e#1686#1687#0" expanded="true" />
             <element signature="e#1725#1726#0" expanded="true" />
             <element signature="e#1798#1799#0" expanded="true" />
@@ -3123,6 +3128,18 @@
             <element signature="e#1938#1939#0" expanded="true" />
             <element signature="e#3727#3728#0" expanded="true" />
             <element signature="e#3764#3765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rodrigo/ventapp/fragment_products.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="196" column="31" selection-start-line="196" selection-start-column="31" selection-end-line="196" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreateView#0;class#fragment_products#0" />
+            <element signature="class#WebGET#0;class#fragment_products#0" />
           </folding>
         </state>
       </provider>

@@ -47,7 +47,7 @@ public class fragment_sales extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        return inflater.inflate(R.layout.fragment_products, container, false);
+        return inflater.inflate(R.layout.fragment_sales, container, false);
     }
 
     @Override
@@ -196,7 +196,7 @@ public class fragment_sales extends Fragment
                 n = nombres.toArray(new String[nombres.size()]);
                 d = descripcion.toArray(new String[descripcion.size()]);
 
-                ListView listProducts = getActivity().findViewById(R.id.list_sales_lst_products);
+                ListView listProducts = getActivity().findViewById(R.id.list_sales_lst_sales);
                 adapter_product adapterProduct = new adapter_product();
                 listProducts.setAdapter(adapterProduct);
             }
