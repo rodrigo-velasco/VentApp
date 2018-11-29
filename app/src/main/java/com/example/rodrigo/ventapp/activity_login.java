@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -18,6 +22,8 @@ import java.net.URLConnection;
 
 public class activity_login extends AppCompatActivity
 {
+    public int user_id;
+
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -77,14 +83,12 @@ public class activity_login extends AppCompatActivity
             TextView name = findViewById(R.id.register_seller_txt_name);
             TextView phone = findViewById(R.id.register_seller_txt_phone);
             TextView mail = findViewById(R.id.register_seller_txt_mail);
-            TextView address = findViewById(R.id.register_seller_txt_address);
 
-            String url = "http://rodrigo-vr12.000webhostapp.com/insertVendedor.php?" +
+            String url = "http://rodrigo-vr12.000webhostapp.com/insertUsuario.php?" +
                     "nombre=" + name.getText().toString() + "&" +
                     "telefono=" + phone.getText().toString() + "&" +
                     "mail=" + mail.getText().toString() + "&" +
-                    "contrasena=" + password.getText().toString() + "&" +
-                    "direccion=" + address.getText().toString();
+                    "pass=" + password.getText().toString();
 
             register.setEnabled(false);
             new RegisterSeller().execute(url);
@@ -131,8 +135,28 @@ public class activity_login extends AppCompatActivity
 
         protected void onPostExecute(String response)
         {
-            if(response.equals("ok"))
+            if(response.equals("not found"))
             {
+
+                Toast.makeText(activity_login.this, "Datos no válidos", Toast.LENGTH_SHORT).show();
+
+                Button loginBtn = findViewById(R.id.login_btn_login);
+                loginBtn.setEnabled(true);
+            }
+
+            else
+            {
+                try
+                {
+                    JSONObject json = new JSONObject(response);
+                    user_id = json.getInt("id_usuario");
+                }
+
+                catch (JSONException e)
+                {
+                    e.printStackTrace();
+                }
+
                 CheckBox check = findViewById(R.id.login_chk_remember);
                 TextView email = findViewById(R.id.login_txt_username);
                 TextView password = findViewById(R.id.login_txt_password);
@@ -156,16 +180,11 @@ public class activity_login extends AppCompatActivity
                 }
 
                 Intent intent = new Intent(activity_login.this, activity_menu.class);
-                activity_login.this.startActivity(intent);
+                Bundle b = new Bundle();
+                b.putInt("id", user_id); //Your id
+                intent.putExtras(b); //Put your id to your next Intent
+                startActivity(intent);
                 finish();
-            }
-
-            else
-            {
-                Toast.makeText(activity_login.this, "Datos no válidos", Toast.LENGTH_SHORT).show();
-                Button loginBtn = findViewById(R.id.login_btn_login);
-
-                loginBtn.setEnabled(true);
             }
         }
     }
