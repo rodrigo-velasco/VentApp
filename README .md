@@ -85,33 +85,35 @@ Pagado	    |    Booleano	| Pagado: Si/No.
 
 
 ## 7. Interfaces de usuario
-- Login:
+
+# Login:
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/1_login.png "Login")
 
-- Registro
+# Registro
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/2_registrarVendedor.png "Registro")
 
-- Agregar cliente
+# Agregar cliente
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/3_agregarCliente.png "Agregar Cliente")
 
-- Agregar producto
+# Agregar producto
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/4_agregarProducto.png "Agregar producto")
 
-- Nueva venta
+# Nueva venta
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/8_nuevaVenta.png "Nueva venta")
 
-- Ventas
+# Ventas
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/5_ventas.png "Ventas")
 
-- Clientes
+# Clientes
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/6_clientes.png "Clientes")
 
-- Productos
+# Productos
+
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/7_productos.png "Producto")
