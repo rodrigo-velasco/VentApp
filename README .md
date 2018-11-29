@@ -114,3 +114,6 @@ Pagado	    |    Booleano	| Pagado: Si/No.
 # Productos
 
 ![alt text](https://pi7e-davidalvaradov414989.codeanyapp.com/RodrigoPI/7_productos.png "Producto")
+
+
+- NOTA: Funcion de reportes y graficas estan pendientes por realizar. 
